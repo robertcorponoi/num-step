@@ -1,0 +1,25 @@
+{
+  "name": "num-step",
+  "version": "0.1.0",
+  "description": "Steps through an array of numbers increasing the previous value for the next step",
+  "main": "dist/index.js",
+  "scripts": {
+    "tsc:watch": "tsc --watch",
+    "test": "ava",
+    "test:watch": "ava --watch"
+  },
+  "keywords": [
+    "Array",
+    "number",
+    "numbers",
+    "step",
+    "iterate",
+    "sequence"
+  ],
+  "author": "Robert Corponoi",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "typescript": "^3.6.3"
+  }
+}
