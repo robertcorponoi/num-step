@@ -1,9 +1,10 @@
 {
   "name": "num-step",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Steps through an array of numbers increasing the previous value for the next step",
   "main": "dist/index.js",
   "scripts": {
+    "tsc": "tsc",
     "tsc:watch": "tsc --watch",
     "test": "ava",
     "test:watch": "ava --watch"
@@ -20,6 +21,6 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "^2.4.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.7.2"
   }
 }
