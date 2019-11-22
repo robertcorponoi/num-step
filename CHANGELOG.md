@@ -1,3 +1,8 @@
+1.0.0 / 2019-11-22
+==================
+* [FEATURE] Added browser build with babel and rollup.
+* [MISC] Updated README badges and usage information.
+
 0.1.1 / 2019-11-08
 ==================
 * Updated dependencies to their latest versions.

@@ -1,7 +1,7 @@
 'use strict'
 
 const test = require('ava');
-const Stepper = require('../dist/index');
+const Stepper = require('../index');
 
 const numbers = [3000, 8000, 8080];
 
