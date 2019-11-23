@@ -1,3 +1,7 @@
+1.0.2 / 2019-11-22
+==================
+* [MISC] Matched up npm version number.
+
 1.0.1 / 2019-11-22
 ==================
 * [HOTFIX] Fixed issue that caused index.d.ts file to be empty.

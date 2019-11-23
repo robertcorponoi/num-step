@@ -1,6 +1,6 @@
 {
   "name": "num-step",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Steps through an array of numbers increasing the previous value for the next step",
   "main": "index.js",
   "module": "num-step.js",
