@@ -4,7 +4,7 @@
  * Takes an array of numbers and returns them one by one each iteration and increasing the previous one
  * by a specified value each iteration.
  */
-module.exports = class NumSteps {
+export default class NumSteps {
 
   /**
    * Keeps track of the current iteration of the arguments.

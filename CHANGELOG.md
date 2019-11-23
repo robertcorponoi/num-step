@@ -1,3 +1,7 @@
+1.0.1 / 2019-11-22
+==================
+* [HOTFIX] Fixed issue that caused index.d.ts file to be empty.
+
 1.0.0 / 2019-11-22
 ==================
 * [FEATURE] Added browser build with babel and rollup.

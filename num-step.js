@@ -35,9 +35,7 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 
-var _temp;
-
-module.exports = (_temp =
+var NumSteps =
 /*#__PURE__*/
 function () {
   /**
@@ -104,4 +102,6 @@ function () {
   }]);
 
   return NumSteps;
-}(), _temp);
+}();
+
+export default NumSteps;
