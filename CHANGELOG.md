@@ -1,3 +1,7 @@
+1.0.3 / 2019-12-07
+==================
+* [MISC] Updated dependencies to their latest versions.
+
 1.0.2 / 2019-11-22
 ==================
 * [MISC] Matched up npm version number.

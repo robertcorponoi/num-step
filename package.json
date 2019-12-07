@@ -1,6 +1,6 @@
 {
   "name": "num-step",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Steps through an array of numbers increasing the previous value for the next step",
   "main": "index.js",
   "module": "num-step.js",
@@ -23,21 +23,24 @@
     "iterate",
     "sequence"
   ],
+  "typings": "lib/index.d.ts",
+  "types": "lib/index.d.ts",
   "author": "Robert Corponoi",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
-    "@babel/plugin-proposal-class-properties": "^7.7.0",
-    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/preset-typescript": "^7.7.2",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.5",
+    "@babel/preset-typescript": "^7.7.4",
     "ava": "^2.4.0",
-    "rollup": "^1.27.4",
+    "rollup": "^1.27.8",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "typescript": "^3.7.2"
-  }
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {}
 }
