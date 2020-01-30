@@ -1,6 +1,6 @@
 {
   "name": "num-step",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Steps through an array of numbers increasing the previous value for the next step",
   "main": "index.js",
   "module": "num-step.js",
@@ -13,7 +13,12 @@
     "bundle": "rollup -c",
     "bundle:watch": "rollup -c --watch",
     "test": "ava",
-    "test:watch": "ava --watch"
+    "test:watch": "ava --watch",
+    "prepare": "npm run build && npm run bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertcorponoi/num-step"
   },
   "keywords": [
     "Array",
@@ -28,19 +33,19 @@
   "author": "Robert Corponoi",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/core": "^7.7.5",
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
-    "@babel/preset-env": "^7.7.5",
-    "@babel/preset-typescript": "^7.7.4",
-    "ava": "^2.4.0",
-    "rollup": "^1.27.8",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-numeric-separator": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "ava": "^3.1.0",
+    "rollup": "^1.30.1",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.5"
   },
   "dependencies": {}
 }

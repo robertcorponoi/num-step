@@ -4,8 +4,7 @@
  * Takes an array of numbers and returns them one by one each iteration and increasing the previous one
  * by a specified value each iteration.
  */
-export default class NumSteps {
-
+export default class NumStep {
   /**
    * Keeps track of the current iteration of the arguments.
    * 
@@ -46,6 +45,13 @@ export default class NumSteps {
   }
 
   /**
+   * Returns the current iteration.
+   * 
+   * @returns {number}
+   */
+  get iteration(): number { return this._iteration; }
+
+  /**
    * Steps through the numbers, iterates the previous value, and returns the current value that needs to
    * be returned.
    * 
@@ -54,17 +60,13 @@ export default class NumSteps {
    * @returns {number}
    */
   step(steps: number = 1): number {
-
     const stepsNormalized: number = steps - 1;
 
     this._previous += stepsNormalized;
-
     this._previous = stepsNormalized % this._numbers.length;
 
     this._iteration = Math.floor(stepsNormalized / this._numbers.length);
 
     return this._numbers[this._previous] + this._iteration;
-
   }
-
 };

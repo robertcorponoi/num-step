@@ -1,3 +1,13 @@
+1.1.0 / 2020-01-30
+==================
+* [FEATURE] Added a getter for `iteration`.
+* [DOCS] Updated README to show `iteration` being used.
+* [DOCS] Added unpkg script usage to README.
+* [MISC] Updated dependencies to their latest versions.
+* [MISC] Updated license year to reflect new year.
+* [MISC] Added `prepare` script to package.json to build and bundle.
+* [MISC] Added `repository` property to package.json.
+
 1.0.3 / 2019-12-07
 ==================
 * [MISC] Updated dependencies to their latest versions.

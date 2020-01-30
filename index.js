@@ -37,7 +37,7 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 
-var NumSteps =
+var NumStep =
 /*#__PURE__*/
 function () {
   /**
@@ -70,8 +70,8 @@ function () {
   /**
    * @param {Array<number>} numbers The numbers to iterate through.
    */
-  function NumSteps(numbers) {
-    _classCallCheck(this, NumSteps);
+  function NumStep(numbers) {
+    _classCallCheck(this, NumStep);
 
     _defineProperty(this, "_iteration", 0);
 
@@ -82,17 +82,23 @@ function () {
     this._numbers = numbers;
   }
   /**
-   * Steps through the numbers, iterates the previous value, and returns the current value that needs to
-   * be returned.
-   * 
-   * @param {number} [steps=1] The amount of steps to take through the numbers.
+   * Returns the current iteration.
    * 
    * @returns {number}
    */
 
 
-  _createClass(NumSteps, [{
+  _createClass(NumStep, [{
     key: "step",
+
+    /**
+     * Steps through the numbers, iterates the previous value, and returns the current value that needs to
+     * be returned.
+     * 
+     * @param {number} [steps=1] The amount of steps to take through the numbers.
+     * 
+     * @returns {number}
+     */
     value: function step() {
       var steps = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
       var stepsNormalized = steps - 1;
@@ -101,9 +107,14 @@ function () {
       this._iteration = Math.floor(stepsNormalized / this._numbers.length);
       return this._numbers[this._previous] + this._iteration;
     }
+  }, {
+    key: "iteration",
+    get: function get() {
+      return this._iteration;
+    }
   }]);
 
-  return NumSteps;
+  return NumStep;
 }();
 
-module.exports = NumSteps;
+module.exports = NumStep;

@@ -18,13 +18,6 @@ num-step steps through an array of numbers increasing the previous value for the
 
 </div>
 
-## **Table of contents**
-
-- [Why](#why)
-- [Install](#install)
-- [Usage](#usage)
-- [API](#api)
-
 ## **Why**
 
 When I was working on [port-scout](https://github.com/robertcorponoi/port-scout) I needed to go through an Array of numbers and each time I got to the end, I needed to increment the numbers and go through them again.
@@ -52,6 +45,12 @@ import Stepper from 'num-step';
 import Stepper from './path/to/num-step.js';
 ```
 
+If you're using num-step in the browser you can also use the script available from unpkg:
+
+```html
+<script type="module" src="https://unpkg.com/num-step@1.0.2/num-step.js"></script>
+```
+
 ## **Usage**
 
 To use num-step in your project, you first have to require the module and then initialize it with a series of values:
@@ -71,6 +70,16 @@ const num = stepper.step(20);
 
 ## **API**
 
+### **iteration**
+
+Gets the current iteration of the stepper.
+
+**example:**
+
+```js
+console.log(stepper.iteration);
+```
+
 ### **step**
 
 Steps through the numbers, iterates the previous value, and returns the current value that needs to be returned.
@@ -79,9 +88,9 @@ Steps through the numbers, iterates the previous value, and returns the current 
 |-------	|--------	|--------------------------------------------------	|---------	|
 | steps 	| number 	| The amount of steps to take through the numbers. 	| 1       	|
 
-```js
-const Stepper = require('num-step');
+**example:**
 
+```js
 const numbers = [3000, 8000, 8080];
 
 const stepper = new Stepper(numbers);
@@ -93,7 +102,7 @@ console.log(num) // Prints out 3005
 
 ## **Test**
 
-Tests for num-step can be run by using:
+To run the tests available for num-step, use:
 
 ```bash
 $ npm run test
